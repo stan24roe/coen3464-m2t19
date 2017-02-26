@@ -1,0 +1,27 @@
+extends layout
+
+block content
+
+
+    .container.has-text-centered
+        .column.is-12
+            .title.is-2
+              h2 We are just one email away.              
+            h2.subtitle.is-5
+              |Feel free to email us if you have a question or you want to inquire.               
+          br
+        form(action='/ContactUs/send', method='post')
+            .columns.is-vcentered
+              .column.is-10.is-offset-1
+                .box
+                  label.label Name                  
+                  p.control
+                    input.input(type='text', name='name', placeholder='John Smith')       
+                  label.label Email
+                  p.control
+                    input.input(type='text', name='email', placeholder='jsmith@example.org')
+                  textarea.textarea(name='message', placeholder='Leave a message...')
+                p.control.has-addons.has-text-centered.columns
+                  center
+                    a
+                        input.button.is-large.is-danger.is-outlined(name='submit', type='submit', value='Send')
