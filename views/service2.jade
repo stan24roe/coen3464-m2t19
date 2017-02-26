@@ -1,0 +1,210 @@
+extends layout
+
+block content
+  
+        h1
+          font(face='Tahoma')
+            center Service 2
+        h2
+          p
+            font(face='Tahoma')
+              center Building Cleaning Service
+        article(id='Educational Buildings')
+          div(w3-half='')
+            center
+              img.w3-sqaure.w3-hover-opacity(src='/images/educational building.jpg', alt='Boss', style='width:40%')
+          ol
+            h3
+              font(face='Tahoma') Educational Buildings
+            |   
+            ul
+              li Cost may vary on size
+              |       
+              ol
+                li Elementary Building : 9,000 - 12,000 pesos
+                |         
+                li High School Building : 14,000 - 17,000 pesos
+                |         
+                li College Building : 20,000 - 24,000 pesos
+              |     
+              li Duration:
+              |     
+              ol
+                li Elementary Building : 7 hours - 8 hours
+                |         
+                li High School Building : 8 hours - 11 hours
+                |         
+                li College Building : 10 hours - 12 hours
+              |         
+              li Tasks
+              |         
+              ol
+                li Full Scrub and mopping of floors, 
+                |           
+                li Windows, Desk and Tables scrubbing and wiping
+                |           
+                li Comfort Room Bleaching
+                |           
+                li Pipe Declogging
+              |     
+              li Note: A worker of the specified place must accompany the cleaners.
+        br
+        br
+        article(id='Government Buildings')
+          div(w3-half='')
+            center
+              img.w3-sqaure.w3-hover-opacity(src='/images/Government Buildings.jpg', alt='Boss', style='width:40%')
+          ol
+            h3
+              font(face='Tahoma') Govenrment Buildings
+            |   
+            li Cost may vary
+            |       
+            ul
+              li City Hall: 30,000 - 40,000 pesos
+              |         
+              li Police Station : 30,000 - 40,000 pesos
+              |         
+              li Fire Station : 28,000 - 37,000 pesos
+              |         
+              li Embassy : 45,000 - 55,000 pesos
+              |         
+              li Post Office : 25,000 - 32,000 pesos
+            |     
+            li Duration:
+            |     
+            ul
+              li City Hall: 1 day - 1 1/2 days
+              |         
+              li Police Station : 1 day - 2 days
+              |         
+              li Fire Station : 1 day - 1 1/2 days
+              |         
+              li Embassy : 3 day - 3 1/2 days
+              |         
+              li Post Office : 1 day - 2 days
+            |         
+            li Tasks
+            |         
+            ul
+              li Full Scrub and mopping of floors, 
+              |           
+              li Windows, Desk and Tables scrubbing and wiping
+              |           
+              li Comfort Room Bleaching
+              |           
+              li Pipe Declogging
+            |     
+            li
+              | Note: A Worker or a Security Gaurd of the specified place must accompany the cleaners. Cleaners must be surveillanced for safety puposes.
+        br
+        br
+        article(id='Medical Buildings')
+          div(w3-half='')
+            center
+              img.w3-sqaure.w3-hover-opacity(src='/images/Medical Buildings.jpg', alt='Boss', style='width:40%')
+          ol
+            h3
+              font(face='Tahoma') Medical Buildings
+            |   
+            li Cost may vary
+            |       
+            ul
+              li Hospital: 72,000 - 100,000 pesos
+              |         
+              li Nursing Home: 40,000 - 45,000 pesos
+            |     
+            li Duration:
+            |     
+            ul
+              li Hospital: 1 week and 3 day - 1 week and 5 days
+              |         
+              li Nursing Home : 2 day - 3 days
+            |         
+            li Tasks
+            |         
+            ul
+              li Full Scrub and mopping of floors, 
+              |           
+              li Windows, Desk and Tables scrubbing and wiping
+              |           
+              li Comfort Room Bleaching
+              |           
+              li Pipe Declogging
+            |     
+            li
+              | Note: A Worker or a Security Gaurd of the specified place must accompany the cleaners. Cleaners must be surveillanced for safety puposes.
+        br
+        br
+        article(id='Commercial Buildings')
+          div(w3-half='')
+            center
+              img.w3-sqaure.w3-hover-opacity(src='/images/commercial Buildings.jpg', alt='Boss', style='width:40%')
+          ol
+            li
+              h3
+                font(face='Tahoma') Commercial Buildings
+            |   
+            ul
+              li Cost may vary
+              |       
+              ul
+                li Drug Store: 20,000 - 30,000 pesos
+                |         
+                li Market: 70,000 - 90,000 pesos
+                |         
+                li Pharmacy : 18,000 - 24,000 pesos
+                |         
+                li Hotel : 120,000 - 150,000 pesos
+                |         
+                li Shopping Mall : 160,000 - 200,000 pesos
+              |     
+              li Duration:
+              |     
+              ul
+                li Drug Store: 2 day - 2 1/2 days
+                |         
+                li Market : 3 day - 4 days
+                |         
+                li Pharmacy : 1 day - 1 1/2 days
+                |         
+                li Hotel : 5 day - 7 days
+                |         
+                li Shopping Mall : 1 week - 1 week and 2 days
+              |         
+              li Tasks
+              |         
+              ul
+                li Full Scrub and mopping of floors, 
+                |           
+                li Windows, Desk and Tables scrubbing and wiping
+                |           
+                li Comfort Room Bleaching
+                |           
+                li Pipe Declogging
+              |     
+              li
+                | Note: A Worker or a Security Gaurd of the specified place must accompany the cleaners. Cleaners must be surveillanced for safety puposes.
+    // Pricing Row
+    // Script For Side Navigation
+    script.
+      function w3_open() {
+      var x = document.getElementById("mySidenav");
+      x.style.width = "300px";
+      x.style.textAlign = "center";
+      x.style.fontSize = "40px";
+      x.style.paddingTop = "10%";
+      x.style.display = "block";
+      }
+      function w3_close() {
+      document.getElementById("mySidenav").style.display = "none";
+      }
+      // Used to toggle the menu on smaller screens when clicking on the menu button
+      function openNav() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+      } else {
+      x.className = x.className.replace(" w3-show", "");
+      }
+      }

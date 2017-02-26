@@ -1,0 +1,83 @@
+extends layout
+
+block content
+
+      // Team Container
+      #crew.w3-container.w3-padding-64.w3-justified
+        h1
+          font(face='Tahoma')
+            center Service 3
+        h2
+          p
+            font(face='Tahoma')
+              center Automobile Maintenance and Cleaning
+        article#Automobile
+          div(w3-half='')
+            center
+              img.w3-sqaure.w3-hover-opacity(src='/images/automobile.jpg', alt='Boss', style='width:40%')
+          ul
+            h3
+              font(face='Tahoma') Automobile Maintenance and Cleaning
+            |  
+            ul
+              li Cost may vary on size
+              |       
+              ol
+                li 2 wheel : 2,000 - 3,000 pesos
+                |         
+                li 3 wheel : 2,000 - 3,000 pesos
+                |         
+                li 4 wheel : 5,000 - 6,000 pesos
+                |         
+                li 10 wheel : 6,000 - 8,000 pesos
+                |         
+                li 16 wheel: 7,000 - 9,000 pesos
+              |     
+              li Duration:
+              |     
+              ol
+                li 2 wheel : 1 hour 
+                |          
+                li 3 wheel : 1 hour 
+                |         
+                li 4 wheel : 1 hour - 2 hours
+                |         
+                li 10 wheel : 1 hour - 2 hours
+                |         
+                li 16 wheel: 1 hour - 2 hours
+              |         
+              li Tasks
+              |         
+              ol
+                li Full Scrub
+                |           
+                li Tire Cleaning and Checking
+                |           
+                li Engine and Battery Maintenance
+                |           
+                li Pipe Declogging
+              |     
+              li Note: Can accompany the cleaner in the duration of maintenance and cleaning
+    // Pricing Row
+    // Script For Side Navigation
+    script.
+      function w3_open() {
+      var x = document.getElementById("mySidenav");
+      x.style.width = "300px";
+      x.style.textAlign = "center";
+      x.style.fontSize = "40px";
+      x.style.paddingTop = "10%";
+      x.style.display = "block";
+      }
+      function w3_close() {
+      document.getElementById("mySidenav").style.display = "none";
+      }
+      // Used to toggle the menu on smaller screens when clicking on the menu button
+      function openNav() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+      } else {
+      x.className = x.className.replace(" w3-show", "");
+      }
+      }

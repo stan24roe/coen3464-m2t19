@@ -1,0 +1,76 @@
+doctype jade
+jade
+head
+
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  link(rel='stylesheet', href='/stylesheet/w3.css')
+  link(rel='stylesheet', href='/stylesheet/w3-theme-black.css')
+  link(rel='stylesheet', href='/stylesheet/font-awesome.min.css')
+  body#myPage
+    // Navbar
+    .w3-top
+      ul.w3-navbar.w3-theme-d2.w3-left-align
+        li.w3-hide-medium.w3-hide-large.w3-opennav.w3-right
+          a.w3-hover-white.w3-theme-d2(href='javascript:void(0);', onclick='openNav()')
+            i.fa.fa-bars
+        |   
+        li
+          a.w3-teal(class="nav-item",href='/')  Home
+        |   
+        li.w3-hide-small
+          a.w3-hover-white(class="nav-item",href='/#description') Description
+        |   
+        li.w3-hide-small
+          a.w3-hover-white(class="nav-item",href='/#crew') Crew
+        |   
+        li.w3-hide-small.w3-dropdown-hover
+          a(href='javascript:void(0);', title='Notifications')
+            | Services Available 
+          |      
+          |     
+          .w3-dropdown-content.w3-white.w3-card-4
+            a(class="nav-item",href='/service1') Service 1
+            |       
+            a(class="nav-item",href='/service2') Service 2
+            |       
+            a(class="nav-item",href='/service3') Service 3
+        |   
+        |   
+        li.w3-hide-small
+          a.w3-hover-white(href='/ContactUs') Contact Us
+      // Navbar on small screens
+      #navDemo.w3-hide.w3-hide-large.w3-hide-medium
+        ul.w3-navbar.w3-left-align.w3-theme
+          li
+            a(class="nav-item",href='/index') Home
+          |       
+          li
+            a(href='#pricing') Description
+          |       
+          li.w3-dropdown-hover
+            a(href='javascript:void(0);', title='Notifications')
+              | Services Available 
+              i.fa.fa-caret-down
+            |      
+            |       
+            .w3-dropdown-content.w3-light-grey.w3-card-4
+              a(href='/service1') Link
+              |         
+              a(href='/service2') Link
+              |         
+              a(href='/service3') Link
+              |          
+              li
+                a(href='ContactUs') Contact Us
+    | 
+    .w3-display-container.w3-animate-opacity
+      img(src='images/images.png', alt='boat', style='width:100%;min-height:350px;max-height:600px;')
+     
+      |   
+      .w3-container.w3-display-bottomleft.w3-margin-bottom
+
+    block content
+
+    .hero-foot
+    .nav-center

@@ -1,0 +1,68 @@
+extends layout
+
+block content
+   
+    // Work Row
+    #description.w3-row-padding.w3-padding-64.w3-theme-l1
+      .w3-whule
+        h2
+          font(face='Tahoma')
+            center Description
+        p
+          font(face='Tahoma')
+            | This Cleaning Service Company, intends to help the workload of househuld or any building cleaning operations. Making a thorough quality of work in every line of service it provides. Cleaning it as good as new,creating a vibrant relationship and Making any cleaned househuld or service area to have a hospitable vibe to each and every person it encounters.Hoping to satisfy the needs of every customer to be serviced.
+      // Team Container
+      #crew.w3-container.w3-padding-64.w3-center
+        h1
+          font(face='Tahoma') Team Irregular
+        |   
+        p
+          font(face='Tahoma') The Team who will make your life Clean
+        .w3-row(style='border: solid;border-culor: darkblue')
+          br
+          .w3-half
+            img.w3-circle.w3-hover-opacity(src='images/stan.jpg', alt='Boss', style='width:40%')
+            |   
+            h3
+              font(face='Tahoma') Stan Roe P. Rosales
+            |   
+            p
+              font(face='Tahoma') Head Cleaner
+            |    
+            p
+              font(face='Tahoma') Manages and Deploys the employee needed in your cleaning problems.
+          .w3-half
+            img.w3-circle.w3-hover-opacity(src='images/Erick.jpg', alt='Boss', style='width:40%')
+            |   
+            h3
+              font(face='Tahoma') Erick John V. Tapado
+            |   
+            p
+              font(face='Tahoma') Master Cleaner
+            |   
+            p
+              font(face='Tahoma')
+                | Also called the &quot;Chosen One&quot;, Mastering every cleaning techniques to please every customer.
+      // Pricing Row
+      // Script For Side Navigation
+      script.
+        function w3_open() {
+        var x = document.getElementById("mySidenav");
+        x.style.width = "300px";
+        x.style.textAlign = "center";
+        x.style.fontSize = "40px";
+        x.style.paddingTop = "10%";
+        x.style.display = "block";
+        }
+        function w3_close() {
+        document.getElementById("mySidenav").style.display = "none";
+        }
+        // Used to toggle the menu on smaller screens when clicking on the menu button
+        function openNav() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        } else {
+        x.className = x.className.replace(" w3-show", "");
+        }
+        }

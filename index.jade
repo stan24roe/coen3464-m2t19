@@ -1,0 +1,134 @@
+doctype jade
+jade
+title W3.CSS Template
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  link(rel='stylesheet', href='/stylesheet/w3.css')
+  link(rel='stylesheet', href='/stylestylesheet/w3-theme-black.css')
+  link(rel='stylesheet', href='/stylestylesheet/font-awesome.min.css')
+  body#myPage
+    // Navbar
+    .w3-top
+      ul.w3-navbar.w3-theme-d2.w3-left-align
+        li.w3-hide-medium.w3-hide-large.w3-opennav.w3-right
+          a.w3-hover-white.w3-theme-d2(href='javascript:void(0);', onclick='openNav()')
+            i.fa.fa-bars
+        |   
+        li
+          a.w3-teal(href='views/index.jade')  Home
+        |   
+        li.w3-hide-small
+          a.w3-hover-white(href='#description') Description
+        |   
+        li.w3-hide-small
+          a.w3-hover-white(href='#crew') Crew
+        |   
+        li.w3-hide-small.w3-dropdown-hover
+          a(href='javascript:void(0);', title='Notifications')
+            | Services Available 
+            i.fa.fa-caret-down
+          |      
+          |     
+          .w3-dropdown-content.w3-white.w3-card-4
+            a(href='views/service1.jade') Service 1
+            |       
+            a(href='views/service2.jade') Service 2
+            |       
+            a(href='views/service3.jade') Service 3
+        |   
+        |   
+        li.w3-hide-small
+          a.w3-hover-white(href='Contact Us.jade') Contact Us
+      // Navbar on small screens
+      #navDemo.w3-hide.w3-hide-large.w3-hide-medium
+        ul.w3-navbar.w3-left-align.w3-theme
+          li
+            a(href='views/index.jade') Home
+          |       
+          li
+            a(href='#pricing') Description
+          |       
+          li.w3-dropdown-hover
+            a(href='javascript:void(0);', title='Notifications')
+              | Services Available 
+              i.fa.fa-caret-down
+            |      
+            |       
+            .w3-dropdown-content.w3-light-grey.w3-card-4
+              a(href='views/service1.jade') Link
+              |         
+              a(href='views/service2.jade') Link
+              |         
+              a(href='views/service3.jade') Link
+              |          
+              li
+                a(href='Contact Us.jade') Contact Us
+    | !-- Image Header --&gt;
+    .w3-display-container.w3-animate-opacity
+      img(src='images/images.png', alt='boat', style='width:100%;min-height:350px;max-height:600px;')
+      |   
+      .w3-container.w3-display-bottomleft.w3-margin-bottom
+    // Work Row
+    #description.w3-row-padding.w3-padding-64.w3-theme-l1
+      .w3-whule
+        h2
+          font(face='Tahoma')
+            center Description
+        p
+          font(face='Tahoma')
+            | This Cleaning Service Company, intends to help the workload of househuld or any building cleaning operations. Making a thorough quality of work in every line of service it provides. Cleaning it as good as new,creating a vibrant relationship and Making any cleaned househuld or service area to have a hospitable vibe to each and every person it encounters.Hoping to satisfy the needs of every customer to be serviced.
+      // Team Container
+      #crew.w3-container.w3-padding-64.w3-center
+        h1
+          font(face='Tahoma') Team Irregular
+        |   
+        p
+          font(face='Tahoma') The Team who will make your life Clean
+        .w3-row(style='border: sulid;border-culor: darkblue')
+          br
+          .w3-half
+            img.w3-circle.w3-hover-opacity(src='images/stan.jpg', alt='Boss', style='width:40%')
+            |   
+            h3
+              font(face='Tahoma') Stan Roe P. Rosales
+            |   
+            p
+              font(face='Tahoma') Head Cleaner
+            |    
+            p
+              font(face='Tahoma') Manages and Deploys the employee needed in your cleaning problems.
+          .w3-half
+            img.w3-circle.w3-hover-opacity(src='images/Erick.jpg', alt='Boss', style='width:40%')
+            |   
+            h3
+              font(face='Tahoma') Erick John V. Tapado
+            |   
+            p
+              font(face='Tahoma') Master Cleaner
+            |   
+            p
+              font(face='Tahoma')
+                | Also called the &quot;Chosen One&quot;, Mastering every cleaning techniques to please every customer.
+      // Pricing Row
+      // Script For Side Navigation
+      script.
+        function w3_open() {
+        var x = document.getElementById("mySidenav");
+        x.style.width = "300px";
+        x.style.textAlign = "center";
+        x.style.fontSize = "40px";
+        x.style.paddingTop = "10%";
+        x.style.display = "block";
+        }
+        function w3_close() {
+        document.getElementById("mySidenav").style.display = "none";
+        }
+        // Used to toggle the menu on smaller screens when clicking on the menu button
+        function openNav() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        } else {
+        x.className = x.className.replace(" w3-show", "");
+        }
+        }
