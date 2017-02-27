@@ -1,9 +1,9 @@
 {
   "name": "coen3463t19",
   "version": "0.0.0",
- "private": true,
-  "scripts" : {
-	"start": "node ./bin/www"
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "body-parser": "^1.16.1",
@@ -13,19 +13,18 @@
     "jade": "^1.11.0",
     "morgan": "^1.8.1",
     "nodemailer": "^3.1.4"
-	
   },
   "devDependencies": {},
-   
- 
   "repository": {
     "type": "git",
-    "url": "git@github.com:stan24roe/coen3464-m2t19.git"
+    "url": "git+ssh://git@github.com/stan24roe/coen3464-m2t19.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/stan24roe/Module-2/issues"
   },
-  "homepage": "https://github.com/stan24roe/Module-2#readme"
+  "homepage": "https://github.com/stan24roe/Module-2#readme",
+  "main": "app.js",
+  "description": ""
 }

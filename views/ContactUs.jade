@@ -3,13 +3,62 @@ extends layout
 block content
 
 
-  // Work Row
-    #description.w3-row-padding.w3-padding-64.w3-theme-l1
-      .w3-whule
+      // Team Container
+      #crew.w3-container.w3-padding-64.w3-justified
+        h1
+          font(face='Tahoma')
+            center We are just one email away.   
         h2
-          font(face='Tahoma')
-            center Description
-        p
-          font(face='Tahoma')
-            | This Cleaning Service Company, intends to help the workload of househuld or any building cleaning operations. Making a thorough quality of work in every line of service it provides. Cleaning it as good as new,creating a vibrant relationship and Making any cleaned househuld or service area to have a hospitable vibe to each and every person it encounters.Hoping to satisfy the needs of every customer to be serviced.    .container.has-text-centered
-     
+          p
+            font(face='Tahoma')
+              center Feel free to email us if you have further questions or you want to inquire in our service.  
+        article#Automobile
+          div(w3-half='')
+            center
+        center     
+          ul
+            h3
+            |  
+           form(action='/ContactUs/send', method='post')
+            .columns.is-vcentered
+              .column.is-10.is-offset-1
+                .box
+                  label.label Name                  
+                  p.control
+                    input.input(type='text', name='name', placeholder='John Smith')       
+                  label.label Email
+                  p.control
+                    input.input(type='text', name='email', placeholder='jsmith@example.org')
+                  textarea.textarea(name='message', placeholder='Leave a message...')
+                p.control.has-addons.has-text-centered.columns
+                  center
+                    a
+                        input.button.is-large.is-danger.is-outlined(name='submit', type='submit', value='Send')
+
+
+    // Pricing Row
+    // Script For Side Navigation
+    script.
+      function w3_open() {
+      var x = document.getElementById("mySidenav");
+      x.style.width = "300px";
+      x.style.textAlign = "center";
+      x.style.fontSize = "40px";
+      x.style.paddingTop = "10%";
+      x.style.display = "block";
+      }
+      function w3_close() {
+      document.getElementById("mySidenav").style.display = "none";
+      }
+      // Used to toggle the menu on smaller screens when clicking on the menu button
+      function openNav() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+      } else {
+      x.className = x.className.replace(" w3-show", "");
+      }
+      }
+
+
+
